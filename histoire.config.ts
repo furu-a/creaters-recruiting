@@ -1,10 +1,11 @@
 import { defineConfig } from 'histoire'
 import { HstVue } from '@histoire/plugin-vue'
 
-export default defineConfig({ 
-  setupFile: '/src/histoire.setup.ts',
+export default defineConfig({
+  setupFile: './histoire.setup.ts',
   plugins: [
     HstVue(),
   ],
-  storyMatch: ['@/stories/*.story.vue'],
+  storyMatch: ['src/**/*.story.vue']
+  // storyMatch: ['@/stories/*.story.vue']
 })
