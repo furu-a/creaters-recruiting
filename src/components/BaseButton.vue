@@ -30,50 +30,31 @@ defineProps({
   </button>
 </template>
 
-<style scoped>
-.btn {
-  border-radius: 4px;
-  padding: 4px 8px;
-  background: #e4e4e4;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #f1f1f1;
-}
-
-.btn[disabled] {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.btn-color-green {
-  background: #94ffc9;
-}
-
-.btn-color-green:hover {
-  background: #acffd6;
-}
-
-.btn-color-red {
-  background: #ff9494;
-}
-
-.btn-color-red:hover {
-  background: #ffa8a8;
-}
-
-.btn-size-big {
-  font-size: 16px;
-  padding: 8px 16px;
-}
-
-.btn-size-small {
-  font-size: 12px;
-  padding: 2px 4px;
-}
-
-.dark .btn {
-  color: black;
-}
+<style scoped lang="sass">
+.btn 
+  border-radius: 4px
+  padding: 4px 8px
+  background: #e4e4e4
+  cursor: pointer
+  &:hover 
+    background: #f1f1f1
+  &[disabled] 
+    opacity: 0.5
+    pointer-events: none
+  &-color-green 
+    background: #94ffc9
+  &-color-green:hover 
+    background: #acffd6
+  &-color-red 
+    background: #ff9494
+  &-color-red:hover 
+    background: #ffa8a8
+  &-size-big 
+    font-size: 16px
+    padding: 8px 16px
+  &-size-small 
+    font-size: 12px
+    padding: 2px 4px
+.dark .btn 
+  color: black
 </style>
