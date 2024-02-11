@@ -3,21 +3,23 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
-<template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+<template lang="pug">
+header
+  img.logo(
+    alt='Vue logo' 
+    src='@/assets/logo.svg' 
+    width='125' 
+    height='125'
+  )
+  .wrapper
+    helloworld(msg='You did it!')
+      nav
+        routerlink(to='/') 
+          | Home
+        routerlink(to='/about') 
+          | About
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+<RouterView />
 </template>
 
 <style scoped lang="sass">

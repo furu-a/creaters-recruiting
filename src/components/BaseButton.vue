@@ -17,17 +17,12 @@ defineProps({
 })
 </script>
 
-<template>
-  <button
-    :disabled="disabled"
-    class="btn"
-    :class="{
-      [`btn-color-${color}`]: color,
-      [`btn-size-${size}`]: size,
-    }"
-  >
-    <slot />
-  </button>
+<template lang="pug">
+button.btn(
+  :disabled="disabled" 
+  :class="{ [`btn-color-${color}`]: color, [`btn-size-${size}`]: size }"
+)
+  slot
 </template>
 
 <style scoped lang="sass">
