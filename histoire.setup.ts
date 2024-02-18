@@ -1,3 +1,5 @@
+import './src/assets/main.sass'
+
 import { createPinia } from 'pinia'
 import { defineSetupVue3 } from '@histoire/plugin-vue'
 
