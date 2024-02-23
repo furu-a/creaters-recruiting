@@ -29,29 +29,6 @@ story(
         :size='state.size'
       )
         | Click me
-    template(#controls='{ state }')
-      HstCheckbox(
-        v-model='state.disabled' 
-        title='Disabled'
-      )
-        HstSelect(
-          v-model='state.color' 
-          title='Color' 
-          :options=[
-            { value: undefined, label: 'Default' },
-            { value: 'green', label: 'Green' },
-            { value: 'red', label: 'Red' },
-          ]
-        )
-          HstSelect(
-            v-model='state.size' 
-            title='Size' 
-            :options=[
-              { value: undefined, label: 'Default' },
-              { value: 'small', label: 'Small' },
-              { value: 'big', label: 'Big' },
-            ]
-          )
   variant(
     title='big green button' 
     icon='el:resize-full'

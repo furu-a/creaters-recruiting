@@ -12,11 +12,11 @@ header
     height='125'
   )
   .wrapper
-    helloworld(msg='You did it!')
+    HelloWorld(msg='You did it!')
       nav
-        routerlink(to='/') 
+        RouterLink(to='/') 
           | Home
-        routerlink(to='/about') 
+        RouterLink(to='/about') 
           | About
 
 <RouterView />
