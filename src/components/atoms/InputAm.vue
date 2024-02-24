@@ -46,45 +46,30 @@ const handleInput = (event: Event) => {
 
 <style lang="sass" scoped>
 input 
+  width: 100%
   margin: 0
   padding: 8px 16px
-  background-color: var(--def-background-color-box-light)
+  background-color: var(--def-background-color-box)
   border: none
-  border-bottom: 2px solid var(--def-border-color-light)
+  border-bottom: 2px solid var(--def-border-color)
   border-radius: 16px 16px 0 0
   outline: none
   -webkit-appearance: none
   -moz-appearance: none
   appearance: none
-  color: var(--def-font-color-light)
+  color: var(--def-font-color)
   font-size: 1.6rem
   &[type="date"]::-webkit-inner-spin-button,
   &[type="date"]::-webkit-clear-button,
   &[type="date"]::-webkit-calendar-picker-indicator
     filter: invert(50%)
   &::placeholder
-    color: var(--de-emph-font-color-light) 
+    color: var(--de-emph-font-color) 
   &:focus
-    border-bottom: 2px solid var(--emph-border-color-light)
+    border-bottom: 2px solid var(--emph-border-color)
   &:disabled
-    color: var(--de-emph-font-color-light)  
-    background-color: var(--de-emph-background-color-box-light) 
+    color: var(--de-emph-font-color)  
+    background-color: var(--de-emph-background-color-box)
+    cursor: not-allowed 
     
-@media (prefers-color-scheme: dark)
-  input 
-    background-color: var(--def-background-color-box-dark)
-    color: var(--def-font-color-dark)
-    border-bottom: 2px solid var(--def-border-color-dark)
-    &[type="date"]::-webkit-inner-spin-button,
-    &[type="date"]::-webkit-clear-button,
-    &[type="date"]::-webkit-calendar-picker-indicator
-      filter: invert(50%)
-    &::placeholder
-      color: var(--de-emph-font-color-dark)
-    &:focus
-      border-bottom: 2px solid var(--emph-border-color-dark)
-    &:disabled
-      background-color: var(--de-emph-background-color-box-dark)
-      color: var(--de-emph-font-color-dark)
-
 </style>
