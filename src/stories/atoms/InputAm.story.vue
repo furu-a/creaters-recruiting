@@ -60,7 +60,30 @@ story(
 </template>
 
 <script lang='ts' setup>
-import InputAm from '../../components/atoms/inputAm.vue'
+import InputAm from '@/components/atoms/InputAm.vue'
 import { logEvent } from 'histoire/client'
 
 </script>
+
+<docs lang="md">
+  # InputAm
+  
+  `<input>`についてのコンポーネントです。  
+  [チケット](https://www.notion.so/HOME-a5cfd10d185b446187ab78551d8a3af2?p=c3801a972d8049ed97f2fd35fc8a8b79&pm=s&pvs=31)
+  
+  ## Props
+  
+  | Name        | Type                         | Default   | Description                    |
+  | --------    | ---------------------------- | --------- | ------------------------------ |
+  | type        | 'text', 'number', 'date', 'email', 'password', 'search', 'url' | 'text' |  |
+  | value       | String \|\| Number | null     |  |
+  | placeholder | String \|\| Number | null     |  |
+  | disabled    | boolean                      | false     |  |
+
+  ## Emits
+
+  | Name        | Event type     | Description                    |
+  | --------    | -------------- | ------------------------------ |
+  | updateInput | input          | 入力された値を返します、 |
+ 
+  </docs>
