@@ -6,6 +6,7 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
 import InputAm from "./atoms/InputAm.vue"
+import TextBlockAm from "./atoms/TextBlockAm.vue"
 
 const handleInput = (value: String | Number) => {
   console.log('update', value)
@@ -160,6 +161,9 @@ WelcomeItem
 InputAm(
   type='text'
   @update-input="handleInput"
+)
+TextBlockAm(
+  text='text'
 )
 
 </template>
