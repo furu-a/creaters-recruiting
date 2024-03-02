@@ -23,6 +23,32 @@
   --color-text:var(--vt-c-text-light-1)
   --section-gap:160px
 
+  --src-white-0: #f8f8f8
+  --src-white-1: #e8e8e8
+  --src-white-2: #d8d8d8
+  --src-white-3: #c8c8c8
+  --src-white-4: #b8b8b8
+  --src-white-5: #a8a8a8
+
+  --src-black-0: #080808
+  --src-black-1: #282828
+  --src-black-2: #484848
+  --src-black-3: #686868
+  --src-black-4: #888888
+
+  --base-background-color:#ffffff
+
+  --emph-font-color:var(--src-black-0)
+  --def-font-color:var(--src-black-1)
+  --de-emph-font-color:var(--src-black-4)
+
+  --def-background-color-box:var(--src-white-1)
+  --de-emph-background-color-box:#efefef
+
+  --emph-border-color:var(--src-black-2)
+  --def-border-color:var(--src-white-4)
+  --de-emph-border-color:var(--src-white-3)
+
 /* semantic color variables for this project
 @media (prefers-color-scheme: dark)
   \:root
@@ -33,6 +59,18 @@
     --color-border-hover:var(--vt-c-divider-dark-1)
     --color-heading:var(--vt-c-text-dark-1)
     --color-text:var(--vt-c-text-dark-2)
+
+
+    --emph-font-color:var(--src-white-1)
+    --def-font-color:var(--src-white-2)
+    --de-emph-font-color:var(--src-black-2)
+
+    --def-background-color-box:var(--src-black-1)
+    --de-emph-background-color-box:#181818
+
+    --emph-border-color:var(--src-white-4)
+    --def-border-color:var(--src-black-2)
+    --de-emph-border-color:var(--src-black-1)
 *
   box-sizing: border-box
   margin: 0
@@ -41,14 +79,16 @@
     box-sizing: border-box
     margin: 0
     font-weight: normal
+html 
+  font-size: 62.5%
 body
   min-height: 100vh
-  color: var(--color-text)
+  // color: var(--color-text)
   background: var(--color-background)
-  transition: color 0.5s, background-color 0.5s
-  line-height: 1.6
+  // transition: color 0.5s, background-color 0.5s
+  line-height: 1.3
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
-  font-size: 15px
-  text-rendering: optimizeLegibility
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
+  font-size: 1.6rem
+  // text-rendering: optimizeLegibility
+  // -webkit-font-smoothing: antialiased
+  // -moz-osx-font-smoothing: grayscale
