@@ -33,9 +33,9 @@ import { logEvent } from 'histoire/client'
   
   | Name        | Type                         | Default   | Description                    |
   | --------    | ---------------------------- | --------- | ------------------------------ |
-  | value       | String \|\| Number | null     |  |
-  | placeholder | String \|\| Number | null     |  |
-  | disabled    | boolean                      | false     |  |
+  | value       | String \|\| Number | null    |  |
+  | placeholder | String \|\| Number | null    |  |
+  | disabled    | Boolean                      | false     |  |
 
   ## Emits
 

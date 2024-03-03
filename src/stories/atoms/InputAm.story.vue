@@ -76,9 +76,9 @@ import { logEvent } from 'histoire/client'
   | Name        | Type                         | Default   | Description                    |
   | --------    | ---------------------------- | --------- | ------------------------------ |
   | type        | 'text', 'number', 'date', 'email', 'password', 'search', 'url' | 'text' |  |
-  | value       | String \|\| Number | null     |  |
-  | placeholder | String \|\| Number | null     |  |
-  | disabled    | boolean                      | false     |  |
+  | value       | String \|\| Number | null    |  |
+  | placeholder | String \|\| Number | null    |  |
+  | disabled    | Boolean                      | false     |  |
 
   ## Emits
 
