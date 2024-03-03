@@ -57,7 +57,6 @@ input
   -webkit-appearance: none
   -moz-appearance: none
   appearance: none
-  color: var(--def-font-color)
   font-size: 1.6rem
   &[type="date"]::-webkit-inner-spin-button,
   &[type="date"]::-webkit-clear-button,
@@ -67,9 +66,5 @@ input
     color: var(--de-emph-font-color) 
   &:focus
     border-bottom: 2px solid var(--emph-border-color)
-  &:disabled
-    color: var(--de-emph-font-color)  
-    background-color: var(--de-emph-background-color-box)
-    cursor: not-allowed 
     
 </style>
